@@ -1,0 +1,12 @@
+<view class="div">
+  <view class="top">
+    <view class="circle"><image class="circle-img" src="{{avatar}}"></image></view>
+    <view class="userid">{{username}}</view>
+  </view>
+  <view wx:if="{{role == 2}}" class="menu" hover-class="menu-hover" catchtap="toMyspeech" data-type="myspeech"><image src="../../images/m1.png" style="width: 36rpx; height: 36rpx; position: relative; top: 6rpx; margin-right: 10rpx;" alt=""/>  我的宣讲/面试</view>
+  <view class="menu" hover-class="menu-hover" catchtap="toTongzhi"><image src="../../images/m2.png" style="width: 36rpx; height: 36rpx; position: relative; top: 6rpx; margin-right: 10rpx;" alt=""/>  面试通知</view>
+  <view class="menu" hover-class="menu-hover" catchtap="toMylesson"><image src="../../images/m3.png"  style="width: 36rpx; height: 36rpx; position: relative; top: 6rpx; margin-right: 10rpx;" alt=""/>  我的课程</view>
+  <view>
+  <button class="login-btn" catchtap="exit">退出登录</button>
+  </view>
+</view>

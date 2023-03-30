@@ -1,0 +1,42 @@
+page {
+  height: 100%;
+  background-color: rgb(241, 241, 241);
+}
+
+.div {
+  padding: 40rpx;
+  width: calc(100% - 80rpx);
+  height: calc(100% - 80rpx);
+  height: (100% - 80rpx);
+}
+
+.inter {
+  margin-bottom: 40rpx;
+  display: flex;
+  padding: 40rpx;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.result {
+  padding: 40rpx;
+  background-color: #fff;
+  margin-bottom: 40rpx;
+}
+
+.result > view:nth-of-type(1) {
+  color: #4271b8;
+  font-weight: 600;
+  font-size: 36rpx;
+}
+
+.result > view:nth-of-type(2) {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+}
+
+.result > view:nth-of-type(3) {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+}

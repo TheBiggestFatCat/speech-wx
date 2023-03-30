@@ -1,0 +1,11 @@
+<view class="div">
+  <view>
+    学生名
+  </view>
+  <input bindinput="getInput" type="text" name="" id=""/>
+  <view>
+    通知内容
+  </view>
+  <textarea bindinput="getText" value=""/>
+<button style="background-color: #4271b8; color: #fff; width: 300rpx; margin-top: 60rpx;" catchtap="submit">提交</button>
+</view>

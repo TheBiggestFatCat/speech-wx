@@ -1,0 +1,46 @@
+/* div */
+.div {
+  font-size: 30rpx;
+  padding: 0 80rpx 100rpx 80rpx;
+}
+
+.top {
+  padding: 40rpx 0 40rpx 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-items: center;
+}
+
+.circle {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 40rpx;
+  border-radius: 50%;
+  background-color: rgb(224, 224, 224);
+}
+
+.circle-img {  
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 40rpx;
+  border-radius: 50%;
+  background-color: rgb(224, 224, 224);
+}
+
+/* 菜单 */
+.menu {
+  padding-left: 20rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.menu-hover {
+  background-color: rgb(236, 236, 236);
+}
+
+.login-btn {
+  margin-top: 60rpx;
+  color: #fff;
+  background-color: #5082ce;
+}

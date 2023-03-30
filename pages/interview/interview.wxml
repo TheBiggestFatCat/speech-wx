@@ -1,0 +1,9 @@
+<view class="div">
+  <block>
+    <view class="inter" wx:for="{{}}">
+      <text></text>
+      <text></text>
+      <text></text>
+    </view>
+  </block>
+</view>

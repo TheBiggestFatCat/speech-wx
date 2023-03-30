@@ -1,0 +1,19 @@
+<view class="div">
+  <view wx:if="{{show == 2}}" class="inter" wx:for="{{inter}}" wx:key="i">
+    <view>
+      {{item.title}}
+    </view>
+    <button style="margin: 0; width: 160rpx; padding: 14rpx; font-size: 26rpx; background-color: #4271b8; color: #fff;" catchtap="goNewtongzhi" data-activityid="{{item.activityId}}">新增通知</button>
+  </view>
+  <view class="result" wx:if="{{show == 3}}" wx:for="{{result}}" wx:key="i">
+    <view>
+      {{item.title}}
+    </view>
+    <view>
+      面试结果：
+    </view>
+    <view>
+      {{item.info}}
+    </view>
+  </view>
+</view>

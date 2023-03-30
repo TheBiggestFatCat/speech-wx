@@ -1,0 +1,4 @@
+<view class="div">
+  <textarea value="" bindinput="getText"/>
+  <button style="background-color: #4271b8; color: #fff;" catchtap="submit">提交</button>
+</view>

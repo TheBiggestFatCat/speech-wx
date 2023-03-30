@@ -1,0 +1,54 @@
+<view class="div">
+  <!-- 顶部 -->
+  <view class="top">
+    <view class="top-block" catchtap="toSpeech">
+      <image style="width: 80rpx; height: 80rpx;" src="/images/speech.png" mode="" />
+      <view>宣讲</view>
+    </view>
+    <view class="top-block" catchtap="toInterview">
+      <image style="width: 80rpx; height: 80rpx;" src="/images/interview.png" mode="" />
+      <view>面试</view>
+    </view>
+    <view class="top-block" catchtap="toLesson">
+      <image style="width: 70rpx; height: 70rpx;" src="/images/lesson.png" mode="" />
+      <view>课程</view>
+    </view>
+  </view>
+
+  <!-- 下方切换样式 -->
+  <view class="switch" style="{{animate}}">
+  </view>
+
+  <!-- 宣讲 -->
+  <view class="speech-view" wx:if="{{page == 'speech'}}">
+    <view class="speech">
+      <input type="text" placeholder="标题" bindinput="getTitle" />
+      <textarea type="text" placeholder="内容" bindinput="getInfo" />
+      <input type="text" placeholder="时间" bindinput="getDate" />
+      <input type="text" placeholder="地点" bindinput="getPlace" />
+      <input type="text" placeholder="宣讲人" bindinput="getTeacher" />
+    </view>
+    <button catchtap="submit" style="width: 240rpx; height: 100rpx; padding: 0; display: flex; justify-content: center; align-items: center; background-color: #4271b8; margin-top: 100rpx; color: #fff;">发布宣讲</button>
+  </view>
+
+  <!-- 面试 -->
+  <view class="interview-view" wx:if="{{page == 'interview'}}">
+    <view class="speech">
+      <input type="text" placeholder="标题" bindinput="getTitle" />
+      <textarea type="text" placeholder="内容" bindinput="getInfo" />
+      <input type="text" placeholder="时间" bindinput="getDate" />
+      <input type="text" placeholder="地点" bindinput="getPlace" />
+    </view>
+    <button catchtap="submit" style="width: 240rpx; height: 100rpx; padding: 0; display: flex; justify-content: center; align-items: center; background-color: #4271b8; margin-top: 100rpx; color: #fff;">发布面试</button>
+  </view>
+
+  <!-- 课程 -->
+  <view class="lesson-view" wx:if="{{page == 'lesson'}}">
+    <view class="speech">
+      <input type="text" placeholder="课程名" bindinput="getLessonTitle" />
+      <textarea type="text" placeholder="课程介绍" bindinput="getLessonInfo" />
+    </view>
+    <button catchtap="submitLesson" style="width: 240rpx; height: 100rpx; padding: 0; display: flex; justify-content: center; align-items: center; background-color: #4271b8; margin-top: 100rpx; color: #fff;">发布课程</button>
+  </view>
+
+</view>

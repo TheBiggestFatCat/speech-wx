@@ -1,0 +1,30 @@
+<view class="div">
+  <view class="top">
+    <view>
+      {{lessons}}
+    </view>
+    <view>
+      {{lessonInfo}}
+    </view>
+    <view>
+      <text>课程ID：{{lessonId}}</text>
+      <button catchtap="sign" wx:if="{{!manager}}">报名</button>
+    </view>
+  </view>
+  <!-- 参加学生 -->
+  <view  wx:if="{{manager}}">
+    <view class="header">
+      <text style='margin-left: 5px;'>报名学生</text>
+      <!-- <text class='all'>右侧文字</text> -->
+    </view>
+    <view class="stu" wx:for="{{stu}}">
+      <view>
+        {{item.stuName}}
+      </view>
+      <view class="btn" wx:if="{{item.status == 0}}">
+        <button style="width: 140rpx; padding: 10rpx; background-color: #4271b8; color: #fff; height: 60rpx; font-size: 28rpx;" catchtap="pass" data-status="1" data-attendid="{{item.attendId}}">通过</button>
+        <button style="width: 140rpx; padding: 10rpx; background-color: #4271b8; color: #fff; height: 60rpx; font-size: 28rpx; margin-left: 20rpx;" catchtap="pass" data-status="2" data-attendid="{{item.attendId}}">不通过</button>
+      </view>
+    </view>
+  </view>
+</view>

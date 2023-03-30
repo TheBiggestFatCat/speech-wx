@@ -1,0 +1,32 @@
+<view class="div">
+  <view class="v1">
+    <view class="v2">
+      <view class="dltext">你改个名字系统</view>
+        <!-- 账号 -->
+        <view class="phoneCs">
+          <image src="/images/user.svg" style="height: 40rpx; width: 40rpx; color: rgb(87, 87, 87)" class="ph"></image>
+          <input placeholder="请输入账号" name="username" bindinput="getUsername" />
+        </view>
+        <!-- 密码 -->
+        <view class=passwordCs">
+          <image src="/images/lock.svg" style="height: 40rpx; width: 40rpx; color: rgb(87, 87, 87)" class="ps"></image>
+          <input placeholder="请输入密码" name="password" bindinput="getPassword" type="password" />
+        </view>
+        <!-- 登录按钮 -->
+        <view class="denglu">
+          <button class="btn-dl" catchtap="login">登录</button>
+        </view>
+        <view class="register">
+          <button class="register-btn" style="width: 480rpx" catchtap="register">注册</button>
+        </view>
+    </view>
+    <view class="selection">
+      <radio-group bindchange="selection" class="selection-2">
+      <image style="width: 80rpx; height: 80rpx;" src="/images/stu.png" mode=""/>
+        <radio color="#4271b8" checked="{{checked}}" value="3" name="ch" /><label>学生</label>
+      <image style="width: 72rpx; height: 72rpx;" src="/images/com.png" mode=""/>
+        <radio color="#4271b8" value="2" name="ch" /><label>企业</label>
+      </radio-group>
+    </view>
+  </view>
+</view>

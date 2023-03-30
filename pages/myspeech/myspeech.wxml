@@ -1,0 +1,17 @@
+<view class="div">
+  <view class="table" style="background-color: #4271b8; color: #fff;">
+    <view>类型</view>
+    <view>标题</view>
+    <view>审核结果</view>
+  </view>
+  <view class="activity" wx:for="{{activity}}" wx:key="i">
+    <view class="table">
+      <view>{{item.type}}</view>
+      <view>{{item.title}}</view>
+      <view style="{{item.status == '通过' ? 'color: green' : (item.status == '未通过' ? 'color: red' : 'color: #aaa')}}">{{item.status}}</view>
+    </view>
+  </view>
+  <view class="lesson" wx:for="{{lesson}}" wx:key="i">
+    
+  </view>
+</view>

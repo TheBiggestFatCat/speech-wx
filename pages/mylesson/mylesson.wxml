@@ -1,0 +1,22 @@
+<view class="div">
+  <view wx:for="{{enter}}" class="lesson-view" wx:key="i" catchtap="toLesson" data-lessonid="{{item.lessonsId}}" data-lessons="{{item.lessons}}" data-lessonInfo="{{item.lessonsInfo}}">
+    <view class="lesson-name">{{item.lessons}}</view>
+    <view class="lesson-info">{{item.lessonsInfo}}</view>
+  </view>
+  <view style="background-color: #4271b8; color: #fff;" class="stu-lesson">
+    <view>
+      课程ID
+    </view>
+    <view>
+      审核结果
+    </view>
+  </view>
+  <view wx:for="{{stuLesson}}" wx:key="i" class="stu-lesson">
+    <view>
+      {{item.attendId}}
+    </view>
+    <view>
+      <text style="{{item.status == 0 ? 'color: #aaa' : (status == 1 ? 'color: green' : 'color: red')}}">{{item.status == 0 ? '审核中' : (status == 1 ? '通过' : '未通过')}}</text>
+    </view>
+  </view>
+</view>

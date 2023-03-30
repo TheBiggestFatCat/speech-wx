@@ -1,0 +1,151 @@
+.v1 {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(241, 241, 241);
+}
+
+/* 白色区域 */
+.v1 .v2 {
+  margin: 100rpx auto;
+  left: 100rpx;
+  width: 545rpx;
+  height: 600rpx;
+  border-radius: 50rpx;
+}
+
+/* 白色区域内的登录文本 */
+.v1 .v2 .dltext {
+  margin-top: 50rpx;
+  position: absolute;
+  margin-left: 50rpx;
+  height: 100rpx;
+  font-size: 60rpx;
+  font-family: Helvetica;
+  color: #000000;
+  line-height: 100rpx;
+  letter-spacing: 2rpx;
+}
+
+/* 手机图片+输入框+下划线的父容器view */
+.v1 .v2 .phoneCs {
+  margin-top: 200rpx;
+  margin-left: 25rpx;
+  position: absolute;
+  display: flex;
+  width: 480rpx;
+  height: 90rpx;
+  background-color: white;
+}
+
+/* 手机图标 */
+.v1 .v2 .phoneCs .ph {
+  margin-top: 22rpx;
+  margin-left: 30rpx;
+}
+
+/* 手机号输入框 */
+.v1 .v2 .phoneCs input {
+  width: 400rpx;
+  font-size: 30rpx;
+  margin-top: 25rpx;
+  margin-left: 30rpx;
+}
+
+/* 密码图标+输入框+小眼睛图标+下划线父容器view */
+.v1 .v2 .passwordCs {
+  margin-top: 350rpx;
+  margin-left: 25rpx;
+  position: absolute;
+  display: flex;
+  width: 480rpx;
+  height: 90rpx;
+  background-color: white;
+}
+
+/* 密码图标 */
+.v1 .v2 .passwordCs .ps {
+  margin-top: 22rpx;
+  margin-left: 30rpx;
+}
+
+/* 密码输入框 */
+.v1 .v2 .passwordCs input {
+  width: 400rpx;
+  font-size: 30rpx;
+  margin-top: 25rpx;
+  margin-left: 30rpx;
+}
+
+.selection {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 480rpx;
+  margin-left: 25rpx;
+  position: absolute;
+  display: flex;
+  width: 480rpx;
+  height: 200rpx;
+  /* background-color: white; */
+}
+
+.selection image {
+  position: relative;
+  top: 30rpx;
+}
+
+.selection-2 {
+  position: relative;
+  bottom: 10rpx;
+}
+
+radio .wx-radio-input{
+  border-radius:50%;
+  width:20px;height:20px;
+}
+
+radio .wx-radio-input.wx-radio-input-checked{
+  border-color:#4271b8 !important;
+  background:#4271b8 !important;
+}
+
+.register {
+  width: 480rpx;
+  height: 80rpx;
+  position: absolute;
+  margin-top: 860rpx;
+  margin-left: 25rpx;
+}
+
+.avatar {
+  width: 480rpx;
+  height: 80rpx;
+  position: absolute;
+  margin-top: 720rpx;
+  margin-left: 25rpx;
+}
+
+.register button {
+  padding: 0rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  width: 100%;
+  height: 100%;
+  border-radius: 5rpx;
+  background-color: rgb(66, 113, 184);
+  color: #fff;
+}
+
+.avatar button {
+  padding: 0rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  width: 100%;
+  height: 100%;
+  border-radius: 5rpx;
+  background-color: rgb(66, 113, 184);
+  color: #fff;
+}

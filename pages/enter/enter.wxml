@@ -1,0 +1,10 @@
+<view class="div">
+  <view class="top">
+  <image src="{{avatar}}" mode=""/>
+    <text>{{enterName}}</text>
+  </view>
+  <view wx:for="{{lessonData}}" class="lesson-view" wx:key="i" catchtap="toLesson" data-lessonid="{{item.lessonsId}}" data-lessons="{{item.lessons}}" data-lessonInfo="{{item.lessonsInfo}}" data-enterid="{{enterId}}">
+    <view class="lesson-name">{{item.lessons}}</view>
+    <view class="lesson-info">{{item.lessonsInfo}}</view>
+  </view>
+</view>

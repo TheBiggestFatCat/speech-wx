@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/register/register",
+    "pages/home/home",
+    "pages/interview/interview",
+    "pages/com/com",
+    "pages/enter/enter",
+    "pages/lesson/lesson",
+    "pages/mine/mine",
+    "pages/myspeech/myspeech",
+    "pages/detail/detail",
+    "pages/comment/comment",
+    "pages/tongzhi/tongzhi",
+    "pages/newtongzhi/newtongzhi",
+    "pages/mylesson/mylesson"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#4271b8",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "/images/home1.png",
+        "selectedIconPath": "/images/home2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/mine1.png",
+        "selectedIconPath": "/images/mine2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

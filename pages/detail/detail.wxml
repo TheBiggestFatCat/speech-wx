@@ -1,0 +1,38 @@
+<view class="div">
+  <view class="top">
+    <view>
+      {{detail.title}}
+    </view>
+    <view>
+      {{detail.info}}
+    </view>
+    <view>
+    <text>{{detail.place}}</text>
+      <text>{{detail.teacher}}</text>
+    </view>
+    <view>
+      <button style="background-color: #4271b8; color: #fff;" catchtap="bao" data-activityid="{{detail.id}}">立即报名</button>
+    </view>
+    <view>
+      评论
+    </view>
+    <view class="line"></view>
+    <view class="commentdetail" wx:for="{{comments}}" wx:key="i">
+    <view>
+      {{item.comments}}
+    </view>
+    <view>
+      <view>
+        {{item.stuName}}
+      </view>
+      <view>
+        {{item.date}}
+      </view>
+    </view>
+  </view>
+  </view>
+  <view class="comment">
+    <button style="background-color: #4271b8; color: #fff; width: 300rpx;" catchtap="toComment">评论</button>
+  </view>
+
+</view>
